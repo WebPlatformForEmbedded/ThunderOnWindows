@@ -1,0 +1,11 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <FrameworkPath>$(SolutionDir)Thunder\Source\</FrameworkPath>
+    <ContractsPath>$(SolutionDir)ThunderInterfaces\</ContractsPath>
+    <ClientsPath>$(SolutionDir)ThunderClientLibraries\Source\</ClientsPath>
+    <ToolPath>$(SolutionDir)Thunder\tools\</ToolPath>
+    <WindowsPath>$(SolutionDir)include\</WindowsPath>
+    <WindowsLibraries>$(SolutionDir)lib\</WindowsLibraries>
+  </PropertyGroup>
+</Project>

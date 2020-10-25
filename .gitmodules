@@ -1,0 +1,15 @@
+[submodule "Thunder"]
+	path = Thunder
+	url = git@github.com:rdkcentral/Thunder.git
+[submodule "ThunderNanoServices"]
+	path = ThunderNanoServices
+	url = git@github.com:rdkcentral/ThunderNanoServices.git
+[submodule "ThunderInterfaces"]
+	path = ThunderInterfaces
+	url = git@github.com:rdkcentral/ThunderInterfaces.git
+[submodule "ThunderClientLibraries"]
+	path = ThunderClientLibraries
+	url = git@github.com:rdkcentral/ThunderClientLibraries.git
+[submodule "rdkservices"]
+	path = rdkservices
+	url = git@github.com:rdkcentral/rdkservices.git
