@@ -10,3 +10,6 @@
 [submodule "ThunderClientLibraries"]
 	path = ThunderClientLibraries
 	url = git@github.com:rdkcentral/ThunderClientLibraries.git
+[submodule "ThunderNanoServicesRDK"]
+	path = ThunderNanoServicesRDK
+	url = git@github.com:WebPlatformForEmbedded/ThunderNanoServicesRDK.git
