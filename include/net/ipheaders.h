@@ -54,7 +54,7 @@ typedef struct udp_hdr
 {
     unsigned short source;       // Source port no.
     unsigned short dest;      // Dest. port no.
-    unsigned short length;       // Udp packet length
+    unsigned short len;       // Udp packet length
     unsigned short check;     // Udp checksum
 } UDP_HDR, * PUDP_HDR, udphdr;
 
@@ -63,8 +63,8 @@ typedef struct udp_hdr
 //
 typedef struct tcp_hdr
 {
-    unsigned short src_portno;       // Source port no.
-    unsigned short dest_portno;      // Dest. port no.
+    unsigned short source;       // Source port no.
+    unsigned short dest;      // Dest. port no.
     unsigned long  seq_num;          // Sequence number
     unsigned long  ack_num;          // Acknowledgement number;
     unsigned short lenflags;         // Header length and flags
