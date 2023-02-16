@@ -4,7 +4,7 @@
     <FrameworkPath>$(SolutionDir)Thunder\Source\</FrameworkPath>
     <ContractsPath>$(SolutionDir)ThunderInterfaces\</ContractsPath>
     <ClientsPath>$(SolutionDir)ThunderClientLibraries\Source\</ClientsPath>
-    <ToolPath>$(SolutionDir)Thunder\tools\</ToolPath>
+    <ToolPath>$(SolutionDir)ThunderTools\</ToolPath>
     <WindowsPath>$(SolutionDir)include\</WindowsPath>
     <WindowsLibraries>$(SolutionDir)lib\</WindowsLibraries>
   </PropertyGroup>
