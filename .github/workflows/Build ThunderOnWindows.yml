@@ -7,8 +7,77 @@ on:
   pull_request:
     branches: ["master"]
  
-# CHANGE TO RDKCENTRAL
-# CHANGE TO MASTER
+env:
+  devEnv: C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\devenv.com
+  solution: Thunder.sln
+
 jobs:
-  ThunderClientLibraries:
-    uses: VeithMetro/Thunder/.github/workflows/Build Thunder on Windows.yml@development/actions-thunderonwindows
+  ThunderOnWindows:
+    runs-on: windows-latest
+
+    strategy:
+      matrix:
+        type: [Debug, Release]
+        version: [64, 86]
+
+    name: Build type - ${{matrix.type}}${{matrix.version}}
+    steps:
+    - name: Checkout ThunderOnWindows
+      uses: actions/checkout@v3
+      with:
+        path: ThunderOnWindows
+        repository: WebPlatformForEmbedded/ThunderOnWindows
+
+    - name: Checkout Thunder
+      uses: actions/checkout@v3
+      with:
+        path: ThunderOnWindows/Thunder
+        repository: rdkcentral/Thunder
+
+    - name: Checkout ThunderTools
+      uses: actions/checkout@v3
+      with:
+        path: ThunderOnWindows/ThunderTools
+        repository: rdkcentral/ThunderTools
+
+    - name: Checkout ThunderClientLibraries
+      uses: actions/checkout@v3
+      with:
+        path: ThunderOnWindows/ThunderClientLibraries
+        repository: rdkcentral/ThunderClientLibraries
+
+    - name: Checkout ThunderInterfaces
+      uses: actions/checkout@v3
+      with:
+        path: ThunderOnWindows/ThunderInterfaces
+        repository: rdkcentral/ThunderInterfaces
+
+    - name: Checkout ThunderNanoServices
+      uses: actions/checkout@v3
+      with:
+        path: ThunderOnWindows/ThunderNanoServices
+        repository: rdkcentral/ThunderNanoServices
+
+    - name: Checkout ThunderNanoServicesRDK
+      uses: actions/checkout@v3
+      with:
+        path: ThunderOnWindows/ThunderNanoServicesRDK
+        repository: WebPlatformForEmbedded/ThunderNanoServicesRDK
+
+    - name: Install jsonref
+      run: pip install jsonref
+
+    - name: Build ThunderOnWindows
+      shell: cmd
+      run: |
+        cd ThunderOnWindows
+        "%devEnv%" /Build "${{matrix.type}}|x${{matrix.version}}"  "%solution%"
+        
+    - name: Tar files
+      run: tar -czvf ${{matrix.type}}${{matrix.version}}.tar.gz artifacts
+    
+    - name: Upload
+      uses: actions/upload-artifact@v3
+      with:
+        name: Thunder-${{matrix.type}}${{matrix.version}}-artifact
+        path: ${{matrix.type}}${{matrix.version}}.tar.gz
