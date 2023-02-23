@@ -7,6 +7,8 @@ on:
   pull_request:
     branches: ["master"]
  
+# CHANGE TO RDKCENTRAL
+# CHANGE TO MASTER
 jobs:
   ThunderClientLibraries:
-    uses: rdkcentral/Thunder/.github/workflows/Build Thunder on Windows.yml@master
+    uses: VeithMetro/Thunder/.github/workflows/Build Thunder on Windows.yml@development/actions-thunderonwindows
