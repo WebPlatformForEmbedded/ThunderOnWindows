@@ -227,6 +227,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "messaging", "Thunder\Source
 		{A7B258FF-15DD-4769-966C-703530E26530} = {A7B258FF-15DD-4769-966C-703530E26530}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "warningreporting", "Thunder\Source\extensions\warningreporting\warningreporting.vcxproj", "{414DC2D4-2C59-4D15-A169-A34460E5CE48}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0936A7B8-E995-452D-8062-CA9311854018} = {0936A7B8-E995-452D-8062-CA9311854018}
+		{68388CCB-365D-443A-A435-2F1940790836} = {68388CCB-365D-443A-A435-2F1940790836}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -515,6 +521,14 @@ Global
 		{68388CCB-365D-443A-A435-2F1940790836}.Release|x64.Build.0 = Release|x64
 		{68388CCB-365D-443A-A435-2F1940790836}.Release|x86.ActiveCfg = Release|Win32
 		{68388CCB-365D-443A-A435-2F1940790836}.Release|x86.Build.0 = Release|Win32
+		{414DC2D4-2C59-4D15-A169-A34460E5CE48}.Debug|x64.ActiveCfg = Debug|x64
+		{414DC2D4-2C59-4D15-A169-A34460E5CE48}.Debug|x64.Build.0 = Debug|x64
+		{414DC2D4-2C59-4D15-A169-A34460E5CE48}.Debug|x86.ActiveCfg = Debug|Win32
+		{414DC2D4-2C59-4D15-A169-A34460E5CE48}.Debug|x86.Build.0 = Debug|Win32
+		{414DC2D4-2C59-4D15-A169-A34460E5CE48}.Release|x64.ActiveCfg = Release|x64
+		{414DC2D4-2C59-4D15-A169-A34460E5CE48}.Release|x64.Build.0 = Release|x64
+		{414DC2D4-2C59-4D15-A169-A34460E5CE48}.Release|x86.ActiveCfg = Release|Win32
+		{414DC2D4-2C59-4D15-A169-A34460E5CE48}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
