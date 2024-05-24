@@ -8,14 +8,14 @@
 //
 typedef struct ip_hdr
 {
-    unsigned char  ip_v;          	 // 4-bit IPv4 version
+    unsigned char  ip_v;             // 4-bit IPv4 version
                                      // 4-bit header length (in 32-bit words)
     unsigned char  ip_tos;           // IP type of service
     unsigned short ip_len;           // Total length
     unsigned short ip_id;            // Unique identifier 
     unsigned short ip_hl;            // Fragment offset field
     unsigned char  ip_ttl;           // Time to live
-    unsigned char  ip_p;         	 // Protocol(TCP,UDP etc)
+    unsigned char  ip_p;             // Protocol(TCP,UDP etc)
     unsigned short ip_sum;           // IP checksum
     unsigned int   ip_src;           // Source address
     unsigned int   ip_dst;           // Source address
