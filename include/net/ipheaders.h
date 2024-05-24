@@ -8,17 +8,17 @@
 //
 typedef struct ip_hdr
 {
-    unsigned char  version;          // 4-bit IPv4 version
+    unsigned char  ip_v;             // 4-bit IPv4 version
                                      // 4-bit header length (in 32-bit words)
     unsigned char  ip_tos;           // IP type of service
-    unsigned short tot_len;          // Total length
-    unsigned short id;               // Unique identifier 
-    unsigned short ihl;              // Fragment offset field
-    unsigned char  ttl;              // Time to live
-    unsigned char  protocol;         // Protocol(TCP,UDP etc)
-    unsigned short check;            // IP checksum
-    unsigned int   saddr;            // Source address
-    unsigned int   daddr;            // Source address
+    unsigned short ip_len;           // Total length
+    unsigned short ip_id;            // Unique identifier 
+    unsigned short ip_hl;            // Fragment offset field
+    unsigned char  ip_ttl;           // Time to live
+    unsigned char  ip_p;             // Protocol(TCP,UDP etc)
+    unsigned short ip_sum;           // IP checksum
+    unsigned int   ip_src;           // Source address
+    unsigned int   ip_dst;           // Source address
 } IPV4_HDR, * PIPV4_HDR, FAR* LPIPV4_HDR, iphdr;
 
 //
@@ -52,10 +52,10 @@ typedef struct ipv6_fragment_hdr
 //
 typedef struct udp_hdr
 {
-    unsigned short source;       // Source port no.
-    unsigned short dest;      // Dest. port no.
-    unsigned short len;       // Udp packet length
-    unsigned short check;     // Udp checksum
+    unsigned short uh_sport;  // Source port no.
+    unsigned short uh_dport;  // Dest. port no.
+    unsigned short uh_ulen;   // Udp packet length
+    unsigned short uh_sum;    // Udp checksum
 } UDP_HDR, * PUDP_HDR, udphdr;
 
 //
