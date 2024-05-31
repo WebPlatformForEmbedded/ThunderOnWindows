@@ -63,8 +63,8 @@ typedef struct udp_hdr
 //
 typedef struct tcp_hdr
 {
-    unsigned short source;       // Source port no.
-    unsigned short dest;      // Dest. port no.
+    unsigned short th_sport;       // Source port no.
+    unsigned short th_dport;      // Dest. port no.
     unsigned long  seq_num;          // Sequence number
     unsigned long  ack_num;          // Acknowledgement number;
     unsigned short lenflags;         // Header length and flags
