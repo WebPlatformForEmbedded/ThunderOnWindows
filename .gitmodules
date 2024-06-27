@@ -13,3 +13,7 @@
 [submodule "ThunderNanoServicesRDK"]
 	path = ThunderNanoServicesRDK
 	url = git@github.com:WebPlatformForEmbedded/ThunderNanoServicesRDK.git
+[submodule "ThunderTools"]
+	path = ThunderTools
+	url = git@github.com:rdkcentral/ThunderTools.git
+	branch = R4_4
