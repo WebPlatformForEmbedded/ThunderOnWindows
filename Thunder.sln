@@ -237,6 +237,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JSONRPCClient", "ThunderNanoServices\examples\JSONRPC\Client\JSONRPCClient.vcxproj", "{DFA83275-7232-4F2B-912A-BD362AA228B3}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JSONRPCPlugin", "ThunderNanoServices\examples\JSONRPC\Plugin\JSONRPCPlugin.vcxproj", "{5CCE3BBB-3CBC-4E4A-92CA-832D119C8F70}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3DA3B4B6-916E-4F21-88C6-512DF0C0A38C} = {3DA3B4B6-916E-4F21-88C6-512DF0C0A38C}
+		{577A83B6-66B6-4A98-A3D6-4EBA066A1772} = {577A83B6-66B6-4A98-A3D6-4EBA066A1772}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
