@@ -58,6 +58,7 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "websocket", "Thunder\Source\websocket\websocket.vcxproj", "{6A3B427D-D8AF-4D2A-B400-924D2596DCF7}"
 	ProjectSection(ProjectDependencies) = postProject
 		{0936A7B8-E995-452D-8062-CA9311854018} = {0936A7B8-E995-452D-8062-CA9311854018}
+		{A7B258FF-15DD-4769-966C-703530E26530} = {A7B258FF-15DD-4769-966C-703530E26530}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Interfaces", "ThunderInterfaces\interfaces\Interfaces.vcxproj", "{3DA3B4B6-916E-4F21-88C6-512DF0C0A38C}"
@@ -535,6 +536,7 @@ Global
 		{68388CCB-365D-443A-A435-2F1940790836}.Release|x86.ActiveCfg = Release|Win32
 		{68388CCB-365D-443A-A435-2F1940790836}.Release|x86.Build.0 = Release|Win32
 		{414DC2D4-2C59-4D15-A169-A34460E5CE48}.Debug|x64.ActiveCfg = Debug|x64
+		{414DC2D4-2C59-4D15-A169-A34460E5CE48}.Debug|x64.Build.0 = Debug|x64
 		{414DC2D4-2C59-4D15-A169-A34460E5CE48}.Debug|x86.ActiveCfg = Debug|Win32
 		{414DC2D4-2C59-4D15-A169-A34460E5CE48}.Release|x64.ActiveCfg = Release|x64
 		{414DC2D4-2C59-4D15-A169-A34460E5CE48}.Release|x86.ActiveCfg = Release|Win32
