@@ -58,6 +58,7 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "websocket", "Thunder\Source\websocket\websocket.vcxproj", "{6A3B427D-D8AF-4D2A-B400-924D2596DCF7}"
 	ProjectSection(ProjectDependencies) = postProject
 		{0936A7B8-E995-452D-8062-CA9311854018} = {0936A7B8-E995-452D-8062-CA9311854018}
+		{A7B258FF-15DD-4769-966C-703530E26530} = {A7B258FF-15DD-4769-966C-703530E26530}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Interfaces", "ThunderInterfaces\interfaces\Interfaces.vcxproj", "{3DA3B4B6-916E-4F21-88C6-512DF0C0A38C}"
