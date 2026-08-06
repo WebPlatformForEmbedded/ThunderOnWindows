@@ -8,6 +8,9 @@
     <WindowsPath>$(SolutionDir)include\</WindowsPath>
     <WindowsLibraries>$(SolutionDir)lib\</WindowsLibraries>
   </PropertyGroup>
+  <PropertyGroup>
+    <EnableCoreMessaging Condition="'$(EnableCoreMessaging)'==''">true</EnableCoreMessaging>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>$(SolutionDir)include\bridge\generated</IncludePath>
   </PropertyGroup>
@@ -23,6 +26,11 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(EnableCoreMessaging)'=='true'">
+    <ClCompile>
+      <PreprocessorDefinitions>__CORE_MESSAGING__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
 </Project>
